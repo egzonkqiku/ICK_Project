@@ -1,0 +1,16 @@
+.App {
+	text-align: center;
+}
+
+.NavBarStyle {
+	background-color: rgb(83, 180, 209);
+	padding: 10px;
+}
+
+.linkStyle {
+	color: black;
+	font-size: medium;
+	text-align: center;
+	margin-right: 25px;
+	text-decoration: none;
+}
