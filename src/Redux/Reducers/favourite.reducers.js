@@ -3,7 +3,11 @@ const initialValue = []
 export const favouriteReducers = (state = initialValue, action) => {
     switch (action.type) {
         case 'SAVE_FAVOURITE':
-            return [...state, action.payload]
+            const isFavouurite = state.find((element) => element.id === action.payload.id)
+            if(!isFavouurite) {
+                return [...state, action.payload]
+            }
+            return state
         case 'DELETE_FAVOURITE':
             const newList = state.filter((element=>{
                 if(element.id === action.payload){
